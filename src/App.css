@@ -1,0 +1,144 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #6ccadd, #cbe8ed); /* Gradient background for a vibrant look */
+  color: #fff; /* Ensures text is visible on a darker background */
+}
+
+/* Container for Center Alignment */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px; /* Adds padding for smaller screens */
+}
+
+/* Card-Like Overlay */
+.overlay {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for a modern feel */
+  padding: 30px;
+  border-radius: 15px; /* Smoother rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds depth with a stronger shadow */
+  text-align: center;
+  width: 100%;
+  max-width: 500px; /* Adjusted for better responsiveness */
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000000; /* Vibrant blue for contrast */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adds subtle text depth */
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px; /* More rounded for a polished look */
+  border: 2px solid #007bff; /* Vibrant border for focus */
+  width: 70%;
+  margin-right: 10px;
+  outline: none; /* Removes default focus styling */
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #0056b3; /* Darker blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Glow effect on focus */
+}
+
+/* Button */
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust based on your design */
+}
+
+.loading-gif {
+  width: 50px; /* Adjust based on your design */
+  height: 50px;
+}
+
+
+
+/* Weather Information Section */
+.weather-info {
+  margin-top: 20px;
+}
+
+/* Weather Details Layout */
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures proper alignment on smaller screens */
+}
+
+/* Weather Icon */
+.weather-icon img {
+  width: 160px; /* Increased size for better visibility */
+  height: auto;
+ /* filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));  Adds a shadow for depth */
+}
+
+/* Weather Details Text */
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #333; /* Darker text for contrast on white card */
+  font-size: 1rem;
+}
+
+.weather-details .live-temperature {
+  font-size: 4.0rem; /* Larger and more prominent temperature */
+  font-weight: bold;
+  color: #000000;
+}
+
+.weather-details p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Footer Text for Attribution */
+.footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7); /* Subtle white for attribution */
+}
